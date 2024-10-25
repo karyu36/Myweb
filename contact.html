@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+
+    <style>
+      nav ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: var(--contrast-background);
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+  
+      nav ul li a:hover {
+        background-color: rgb(88, 165, 247);
+      }
+
+      
+
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul class="nav">
+        <li class="nav-item">
+          <strong class="nav-link">Lifestyle Vibes</strong>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="#" role="button">Subscribe</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Get in Touch</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h5>Contact Information</h5>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Phone:</strong> +62 456 7890</p>
+                <p><strong>Address:</strong> Center Jakarta,Kemayoran 14</p>
+                <h5>Follow Us</h5>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Instagram</button>
+                    <button class="btn btn-primary" type="button">Facebook</button>
+                    <button class="btn btn-primary" type="button">Twitter</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+      <section aria-label="Subscribe example">
+        <div class="container">
+          <article>
+            <hgroup>
+              <h2>Join Our Community</h2>
+              <h3>Subscribe for the latest lifestyle updates</h3>
+            </hgroup>
+            <form class="grid">
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="First Name"
+                aria-label="First Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+              <button type="submit" onclick="event.preventDefault()">
+                Subscribe
+              </button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <footer class="container" id="container">
+        <small
+          ><a href="#">Privacy Policy</a> •
+          <a href="#">Terms & Conditions</a></small
+        >
+      </footer>
+    </div>
+  </body>
+</html>
