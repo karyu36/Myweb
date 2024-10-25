@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+
+    <style>
+      nav ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: var(--contrast-background);
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+  
+      nav ul li a:hover {
+        background-color: rgb(88, 165, 247);
+      }
+
+      .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .text-content {
+        max-width: 50%;
+      }
+
+      .image-container {
+        flex-shrink: 0;
+      }
+
+      .image-container img {
+        width: 300px;
+        height: 600px;
+        object-fit: cover;
+
+      }
+
+      .centered-text {
+        color: #1c1414; /* Warna teks */
+      }
+
+      .wellness {
+        display: flex;
+        align-items: center;
+      }
+
+      .wellness img {
+        width: 300px;
+        height: 600px;
+        object-fit: cover;
+        margin: 0 20px 0 160px; /* Menambahkan margin kiri */
+      }
+
+      .wellness-text {
+        max-width: 50%;
+        text-align: justify;
+        color: #171313; /* Warna teks */
+        margin-left: 80px;
+      }
+
+      .fashion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+
+      .fashion-text {
+        max-width: 50%;
+        text-align: justify;
+        color: #131212; /* Warna teks */
+        margin-left: 170px; /* Menambahkan margin kiri */
+      }
+
+      .fashion img {
+        width: 300px;
+        height: 600px;
+        object-fit: cover;
+        margin-right: 180px;
+        transition: box-shadow 0.3s ease;
+      }
+
+      .fashion-image:hover{
+        box-shadow:0 0 20px 10px rgba(255, 255, 255, 0.7);
+      }
+
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        padding: 20px;
+      }
+
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+
+      .text-content {
+        max-width: 50%;
+        text-align: justify;
+        color: #fff; /* Warna teks */
+      }
+
+      .image {
+        width: 300px;
+        height: 600px;
+        object-fit: cover;
+        margin-left: 20px;
+      }
+
+      .image-container img,
+      .wellness img,
+      .fashion img {
+        transition: box-shadow 0.3s ease;
+      }
+
+      .image-container img:hover,
+      .wellness img:hover,
+      .fashion img:hover {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul class="nav">
+        <li class="nav-item">
+          <strong class="nav-link">Lifestyle Vibes</strong>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill" href="#" role="button">Subscribe</a>
+        </li>
+      </ul>
+    </nav>
+
+    <video class="video-background" autoplay loop muted>
+      <source src="back.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+      <main class="container">
+        <div class="content-container">
+          <div class="text-content">
+            <div class="centered-text">
+              <h2>Welcome to the Lifestyle Hub</h2>
+              <h3>Explore trends, wellness, and living your best life</h3>
+            </div>
+            <p>
+              Lifestyle is all about finding balance, embracing health, and living
+              in the moment. Whether you're into fitness, mindfulness, or just
+              looking to elevate your daily routines, you've come to the right
+              place.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1589089804352-138c84aeeac3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Wellness lifestyle image from Unsplash"
+            />
+          </div>
+        </div>
+      </main>
+
+      <section class="wellness">
+        <img src="https://plus.unsplash.com/premium_photo-1664884884474-1fe1b7b43ee1?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wellness image" />
+        <div class="wellness-text">
+          <h3>Latest in Wellness</h3>
+          <p>
+            Programmer is quite a fun job. Many people have jobs because they can work anywhere at home or in the office. However, that doesn't mean this job is easy. Starting from few deadlines and program issues make stress pile up and can affect health.
+          </p>
+        </div>
+      </section>
+
+      <section class="fashion">
+        <div class="fashion-text">
+          <h3>Fashion & Trends</h3>
+          <p>
+            Are you a programmer who rarely leaves the house, then afraid of missing out on fashion trends? Don't worry, Bro ME here will help you choose clothes so that they don't look outdated and make you look cool.
+          </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1653694053345-b22f94c95bcf?q=80&w=2444&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fashion image" />
+      </section>
+
+      <section aria-label="Subscribe example">
+        <div class="container">
+          <article>
+            <hgroup>
+              <h2>Join Our Community</h2>
+              <h3>Subscribe for the latest lifestyle updates</h3>
+            </hgroup>
+            <form class="grid">
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="First Name"
+                aria-label="First Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+              <button type="submit" onclick="event.preventDefault()">
+                Subscribe
+              </button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <footer class="container" id="container">
+        <small
+          ><a href="#">Privacy Policy</a> •
+          <a href="#">Terms & Conditions</a></small
+        >
+      </footer>
+    </div>
+  </body>
+</html>
